@@ -366,4 +366,65 @@ F 3 "" H 6350 2050 50  0000 C CNN
 	1    6350 2050
 	1    0    0    -1  
 $EndComp
+$Comp
+L ISPConnector J1
+U 1 1 56C74919
+P 5350 4650
+F 0 "J1" H 5550 4950 60  0000 C CNN
+F 1 "ISPConnector" H 5350 4300 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x03" H 5100 4550 60  0001 C CNN
+F 3 "" H 5100 4550 60  0000 C CNN
+	1    5350 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 56C74A3C
+P 5950 4900
+F 0 "#PWR09" H 5950 4650 50  0001 C CNN
+F 1 "GND" H 5950 4750 50  0000 C CNN
+F 2 "" H 5950 4900 50  0000 C CNN
+F 3 "" H 5950 4900 50  0000 C CNN
+	1    5950 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4900 5950 4800
+Wire Wire Line
+	5950 4800 5850 4800
+$Comp
+L +BATT #PWR010
+U 1 1 56C74AB3
+P 5950 4400
+F 0 "#PWR010" H 5950 4250 50  0001 C CNN
+F 1 "+BATT" H 5950 4540 50  0000 C CNN
+F 2 "" H 5950 4400 50  0000 C CNN
+F 3 "" H 5950 4400 50  0000 C CNN
+	1    5950 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4400 5950 4500
+Wire Wire Line
+	5950 4500 5850 4500
+Wire Wire Line
+	5850 4650 5950 4650
+Text Label 5950 4650 0    60   ~ 0
+MOSI
+Text Label 4550 4650 0    60   ~ 0
+SCK
+Text Label 4550 4500 0    60   ~ 0
+MISO
+Text Label 4550 4800 0    60   ~ 0
+~RST
+Wire Wire Line
+	4550 4500 4850 4500
+Wire Wire Line
+	4850 4650 4550 4650
+Wire Wire Line
+	4550 4800 4850 4800
+Wire Wire Line
+	4300 3000 4500 3000
+Text Label 4500 3000 0    60   ~ 0
+~RST
 $EndSCHEMATC
