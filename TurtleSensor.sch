@@ -427,4 +427,90 @@ Wire Wire Line
 	4300 3000 4500 3000
 Text Label 4500 3000 0    60   ~ 0
 ~RST
+$Comp
+L FTDIConnector J2
+U 1 1 56DB7438
+P 5550 6000
+F 0 "J2" H 5300 6600 60  0000 C CNN
+F 1 "FTDIConnector" H 5350 5350 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_1x06" H 5550 5650 60  0001 C CNN
+F 3 "" H 5550 5650 60  0000 C CNN
+	1    5550 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 6100 4700 6100
+Wire Wire Line
+	5000 6250 4700 6250
+Wire Wire Line
+	4400 6400 5000 6400
+Text Label 3700 6400 0    60   ~ 0
+~RST
+Text Label 4700 6250 0    60   ~ 0
+TX
+Text Label 4700 6100 0    60   ~ 0
+RX
+$Comp
+L GND #PWR011
+U 1 1 56DB7AC0
+P 4550 6550
+F 0 "#PWR011" H 4550 6300 50  0001 C CNN
+F 1 "GND" H 4550 6400 50  0000 C CNN
+F 2 "" H 4550 6550 50  0000 C CNN
+F 3 "" H 4550 6550 50  0000 C CNN
+	1    4550 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR012
+U 1 1 56DB7B9E
+P 4400 5500
+F 0 "#PWR012" H 4400 5350 50  0001 C CNN
+F 1 "+BATT" H 4400 5640 50  0000 C CNN
+F 2 "" H 4400 5500 50  0000 C CNN
+F 3 "" H 4400 5500 50  0000 C CNN
+	1    4400 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3250 4500 3250
+Wire Wire Line
+	4300 3150 4500 3150
+Text Label 4500 3150 0    60   ~ 0
+RX
+Text Label 4500 3250 0    60   ~ 0
+TX
+Wire Wire Line
+	4400 5950 5000 5950
+Wire Wire Line
+	4550 6550 4550 5650
+Wire Wire Line
+	4550 5650 5000 5650
+Wire Wire Line
+	4400 5500 4400 5950
+NoConn ~ 5000 5800
+NoConn ~ 4300 1550
+NoConn ~ 4300 2400
+NoConn ~ 4300 2500
+NoConn ~ 4300 2600
+NoConn ~ 4300 2700
+NoConn ~ 4300 3350
+NoConn ~ 4300 3450
+NoConn ~ 4300 3550
+NoConn ~ 4300 3650
+NoConn ~ 4300 3750
+NoConn ~ 4300 3850
+$Comp
+L C C2
+U 1 1 56DB8C77
+P 4250 6400
+F 0 "C2" H 4275 6500 50  0000 L CNN
+F 1 "0.1uF" H 4275 6300 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4288 6250 50  0001 C CNN
+F 3 "" H 4250 6400 50  0000 C CNN
+	1    4250 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 6400 3700 6400
 $EndSCHEMATC
